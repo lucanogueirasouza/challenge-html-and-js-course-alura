@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 01 - Diferença de Idade</title>
+</head>
+<body>
+
+    <h1>DESAFIO 01 - 'ALURA' | w/ HTML + JS</h1>
+    <h3>DIFERENÇA DE IDADE DE IRMÃOS</h3>
+
+<h5>ENUNCIADO DA QUESTÃO: <br> Carlos foi desafiado por sua irmã Ana a desenvolver um código que exibisse a mensagem "Nossa diferença de idade é", e realizasse a concatenação do resultado da subtração da sua idade com a do seu irmão (ou de um amigo). O resultado pode ser negativo, sem dúvida. Para desenvolver esse código, não se pode esquecer de usar as funções pulaLinha e mostra e inclusive a tag <meta> para manter as boas práticas de programação.
+
+<br><br>Como informação adicional: Carlos tem 18 anos e Ana tem 15 anos.</h5>
+
+<h3>=============================================================================================================================================<br>Resolução: <br> </h3>
+
+<script>
+    function pularLinha() { 
+        document.write(
+            "<br>"
+        )
+    };
+
+    function escrever(mensagem) {
+        document.write(mensagem)
+        pularLinha()
+    };
+
+    const idade_h = 18;
+    const idade_m = 15;
+
+    escrever("Idade irmão: " + idade_h)
+    escrever("Idade irmã: " + idade_m)
+
+    pularLinha()
+
+    escrever("A diferença de idade é: " + (idade_h - idade_m) + ("  | (18-15)")) 
+</script>
+<br>
+-
+<br>
+<br>
+CURSO: <a href="https://cursos.alura.com.br/course/logica-programacao-javascript-html">Clique aqui!</a>
